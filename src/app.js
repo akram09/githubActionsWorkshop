@@ -16,8 +16,4 @@ app.get('/', (req, res) => {
   res.send('Hello WOrld ')
 })
 
-const port = 3000
-
-app.listen(port)
-
 module.exports = app

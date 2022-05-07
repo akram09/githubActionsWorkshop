@@ -4,10 +4,10 @@
   "description": "Github Actions Workshop ",
   "main": "index.js",
   "scripts": {
-    "test": "jest --testTimeout=10000",
+    "test": "jest --testTimeout=10000 --detectOpenHandles",
     "format": "prettier src/**/*.js",
     "lint": "eslint src/**/*.js",
-    "start": "node src/index.js"
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
