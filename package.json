@@ -4,7 +4,7 @@
   "description": "Github Actions Workshop ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --testTimeout=10000",
     "format": "prettier src/**/*.js",
     "lint": "eslint src/**/*.js",
     "start": "node src/index.js"
@@ -12,6 +12,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/akram09/githubActionsWorkshop.git"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   },
   "keywords": [
     "Github",
@@ -33,6 +39,8 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.6.2"
+    "jest": "^28.1.0",
+    "prettier": "^2.6.2",
+    "supertest": "^6.2.3"
   }
 }
