@@ -31,7 +31,7 @@ jobs:
         run: npm run format
       - name: 'Linting'
         run: npm run lint
-  # This job will
+  # This job will test the code with jest and supertest
   test:
     runs-on: ubuntu-latest
     needs: [lint]
