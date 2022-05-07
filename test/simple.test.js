@@ -3,6 +3,3 @@ describe('Sample Test', () => {
     expect(true).toBe(true)
   })
 })
-afterAll((done) => {
-  done()
-})
