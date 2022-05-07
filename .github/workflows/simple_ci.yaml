@@ -3,7 +3,6 @@ name: Rest API CI
 on:
   push:
     branches:
-      - main
       - develop
   pull_request:
     branches:

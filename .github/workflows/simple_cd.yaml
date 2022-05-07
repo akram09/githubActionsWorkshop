@@ -37,4 +37,4 @@ jobs:
             git checkout main
             git pull
             npm install 
-            npm start
+            npm start &
